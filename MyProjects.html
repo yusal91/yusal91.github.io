@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General reset for margin and padding */
+        body, html
+        {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%; /* Ensure the body takes the full height */
+            background-color: #1a1a2e; /* Match header and body color */
+            color: white;
+        }
+
+        /* Style for the navigation bar */
+        nav
+        {
+            background-color: #1a1a2e; /* Match body background color */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo
+        {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul
+        {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li
+        {
+            margin: 0 15px;
+        }
+
+        nav ul li a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover
+        {
+            text-decoration: underline;
+        }
+
+        /* Hero section styles */
+        .hero
+        {
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero h1
+        {
+            font-size: 38px;
+            margin: 20px 0;
+        }
+
+        /* Section for project display */
+        .project-container
+        {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-container img
+        {
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-description
+        {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .project-description h2
+        {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .project-description p
+        {
+            margin: 15px 0;
+            font-size: 16px;
+            color: #cfcfcf;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">My Projects</div>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="SchoolProjectPage.html">School Projects</a></li>
+            <li><a href="#">My Projects</a></li>
+            <li><a href="ContectPage.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <h1>Here is few project i have worked myself</h1>
+    </section>
+    <!-- Project section -->
+    <section class="project-container">
+        <img src="3D RPG.PNG" alt="3D RPG Project">
+        <div class="project-description">
+            <h2>Last Fantasy: The End</h2>
+            <p>This project is a third-person action RPG that emphasizes a rich narrative experience. Drawing inspiration from open-world games, it features a teleportation system and an inventory management system that utilizes drag and drop mechanics. Additionally, elements from the Final Fantasy series have influenced the design, particularly the dashing ability, which is heavily inspired by Dissidia Final Fantasy. While combat mechanics are still under development, they are also being shaped by these influences.</p>            
+        </div>
+    </section>
+    <section class="project-container">
+    <video controls width="400">
+        <source src="Last-Fantsy - GamePlay.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="project-description">
+        <h2></h2>
+        <p>This is a display of the content I've created up to now. While it's not perfect yet, I'm continuously working on improving it whenever I have the chance.</p>
+    </div>
+    </section>
+    <section class="project-container">
+    <video controls width="400">
+        <source src="Other Content.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="project-description">
+        <h2></h2>
+        <p>This example highlights the content I want to enhance. An inventory system like this should include a category button so users can easily see items sorted by their categories. Plus, I want to incorporate text prompts for interactions, like when a player gets close to a save point, door, or treasure chest, and so on. </p>
+    </div>
+    </section>
+</body>
+</html>

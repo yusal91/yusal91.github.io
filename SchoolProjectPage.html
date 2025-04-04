@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General reset for margin and padding */
+        body, html
+        {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%; /* Ensure the body takes the full height */
+            background-color: #1a1a2e; /* Match header and body color */
+            color: white;
+        }
+
+        /* Style for the navigation bar */
+        nav
+        {
+            background-color: #1a1a2e; /* Match body background color */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo
+        {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul
+        {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li
+        {
+            margin: 0 15px;
+        }
+
+        nav ul li a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover
+        {
+            text-decoration: underline;
+        }
+
+        /* Hero section styles */
+        .hero
+        {
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero h1
+        {
+            font-size: 38px;
+            margin: 20px 0;
+        }
+
+        /* Section for project display */
+        .project-container
+        {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-container img
+        {
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-description
+        {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .project-description h2
+        {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .project-description p
+        {
+            margin: 15px 0;
+            font-size: 16px;
+            color: #cfcfcf;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">School Projects</div>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="#">School Projects</a></li>
+            <li><a href="MyProjects.html">My Projects</a></li>
+            <li><a href="ContactPage.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <h1>Here is the project I worked on during school time</h1>
+    </section>
+
+    <!-- Project section -->
+    <section class="project-container">
+        <img src="Tower Of Hanoi.jpg" alt="Tower of Hanoi Project">
+        <div class="project-description">
+            <h2>Tower of Hanoi</h2>
+            <p>This was our first project, and we had a specific theme to stick to. We aimed to create a puzzle game called "Tower of Hanoi." Even though we tried to follow the theme, we ran into some major resource issues. In the end, we went with a pirate character who explores and solves puzzles to find treasure. Since this was my first project and I was still learning the ropes of programming, I struggled a bit to put everything together. As a result, we ended up with a character that could push objects around to get through levels and reach the finish line.</p>
+            <p> 
+        <a href = "https://www.youtube.com/watch?v=9h2iRaaAiUs" target="_blank"> <h8> GamePlay Trailer</h8>  </a>
+        </div>
+    </section>
+    <!-- Project section -->
+    <section class="project-container">
+        <img src="Animal Treasure Quest.jpg" alt="Animal Treasure Quest Project">
+        <div class="project-description">
+            <h2>Animal Treasure Quest</h2>
+            <p>A multiplayer puzzle game played from a third-person perspective. We had an awesome team of designers and a super skilled programmer, along with myself. Everyone involved was really talented and contributed a lot. Unfortunately, my programmer fell ill and couldn’t wrap up the project, so we all did our best to bring it to completion. </p>
+        </div>
+    </section>
+    <!-- Project section -->
+    <section class="project-container">
+        <img src="Coin Collecting Mystery -  GamePlay.jpg" alt="Coin Collecting Mystery Assginment">
+        <div class="project-description">
+            <h2>Coin Collecting Mystery </h2>
+            <p>My teacher gave me this assignment and suggested I tackle it on my own. He also recommended that I set up some time with him during our mentorship sessions for extra help. I’d get plenty of support to make sure I could add some playable content. The main goal was to find all the coins. Plus, I learned how to build a teleportation system between two platforms.</p>
+            <p>
+            <a href =  " https://yu91.itch.io/2d-coincollecter " target="_blank"> <h7> Try out the demo here</h7>  </a> 
+            </p>
+        </div>
+    </section>
+    <!-- Project section -->
+    <section class="project-container">
+        <img src="Tetris.PNG" alt="Tetris Assginment">
+        <div class="project-description">
+            <h2>Tetris </h2>
+            <p>We got another assignment that was meant to be an easy one for everyone to tackle on their own. We were also encouraged to set up some mentorship sessions with our teacher to help us out with it. The task was pretty straightforward: we had to make a playable demo that featured losing conditions and a way to keep track of high scores.</p>
+            <p>
+            <a href =  "https://yu91.itch.io/tetris " target="_blank"> <h7> Try out the demo here</h7>  </a> 
+            </p>
+        </div>
+    </section>
+</body>
+</html>

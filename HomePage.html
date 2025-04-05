@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General reset for margin and padding */
+        body, html
+        {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%; /* Ensure the body takes the full height */
+        }
+
+        /* Style for the navigation bar */
+        nav
+        {
+            background-color: #1a1a2e; /* Dark blue background */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo
+        {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul
+        {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li
+        {
+            margin: 0 15px;
+        }
+
+        nav ul li a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover
+        {
+            text-decoration: underline;
+        }
+
+        /* Hero section styles */
+        .hero
+        {
+            background-color: #1a1a2e; /* Dark blue background */
+            color: white;
+            text-align: center;
+            padding: 2px 20px; /* Adjust padding to move it closer to the center */
+            height: 100vh; /* Make hero section cover the entire viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1
+        {
+            font-size: 38px;
+            margin: 0;
+        }
+
+        .hero p
+        {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #cfcfcf; /* Slightly lighter text for subtext */
+            max-width: 600px; /* Fixed width for the paragraph text */
+            /* To adjust the width, modify the value of max-width */
+        }
+
+        .hero button
+        {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover
+        {
+            background-color: white;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">Home</div> <!-- Add a logo >between here< -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="SchoolProjectPage.html">School Projects</a></li>
+            <li><a href="MyProjects.html">My Projects</a></li>
+            <li><a href="ContectPage.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <h1>Welcome to my portfolio page</h1>
+        <p id="hero-text">
+            My name is Juma Salman Ali, and I graduated from Future Game in 2022. I've had a passion for game development since childhood. After finishing college, I noticed that there weren't many opportunities in the field. When I came across the Future Games advertisement, I eagerly applied. Receiving my acceptance letter filled me with excitement and joy. I loved every class and found myself wanting to learn more and more with each session.
+            <br><br>
+            In my free time, I enjoy playing games that have engaging stories, and my top choice is role-playing games. Looking ahead, I aspire to create something wonderful, similar to the RPGs I loved playing. As for my personality, friends and acquaintances often see me as friendly, courteous, loyal, and quite self-disciplined, whether in person or online.
+            <br><br>
+            
+        </p>
+         <!--<button onclick="openContactPage()">Contact Me</button>-->
+    </section>
+
+    <script>
+        // Function to scroll to the Contact section
+        function openContactPage()
+        {
+            window.location.href = 'ContactPage.html';
+        }
+
+        // Function to check if the text in the hero paragraph spans multiple lines
+        function checkText() 
+        {
+            const p = document.getElementById('hero-text');
+            const lineHeight = parseFloat(window.getComputedStyle(p).lineHeight);
+            const height = p.offsetHeight;
+
+            // Calculate how many lines the text spans
+            const lines = Math.round(height / lineHeight);
+
+            if (lines > 1) {
+                alert(`The text spans ${lines} lines.`);
+            } else {
+                alert('The text fits in one line.');
+            }
+        }
+    </script>
+</body>
+</html>
